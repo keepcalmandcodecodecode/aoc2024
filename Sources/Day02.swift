@@ -68,7 +68,7 @@ struct Day02: AdventDay {
                 count += 1
                 continue
             }
-            var index2 = indexOfError(row: row.reversed())
+            let index2 = indexOfError(row: row.reversed())
             row.remove(at: index)
             index = indexOfError(row: row)
             if index == -1 {
