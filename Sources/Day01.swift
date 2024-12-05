@@ -9,7 +9,7 @@ struct Day01: AdventDay {
         var array = [[Int]]()
         array.append([])
         array.append([])
-        data.split(separator: "\n").map {
+        _ = data.split(separator: "\n").map {
             let result = $0.split(separator: " ").compactMap { Int($0) }
             array[0].append(result[0])
             array[1].append(result[1])
